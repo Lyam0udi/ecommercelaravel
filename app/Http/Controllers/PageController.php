@@ -15,4 +15,11 @@ class PageController extends Controller
     public function afficherPage2 (){
         return view('page2');
     }
+
+    public function donnees (){
+
+        $name = "Ahmed";
+        return view('donnees/index')->with('name',$name);
+    }
+    
 }

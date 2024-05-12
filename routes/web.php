@@ -19,6 +19,7 @@ Route::get('/', function () {
 });
 
 Route::get('/page1', [PageController::class, 'afficherPage1']);
-Route::get('/page2', [PageController::class, 'afficherPage2']);
+Route::get('/about', [PageController::class, 'afficherPage2']);
+Route::get('/affichage/donnees', [PageController::class, 'donnees']);
 
 
