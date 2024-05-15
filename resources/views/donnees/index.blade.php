@@ -12,9 +12,10 @@
     <h3> {{ $age }} </h3>
     
     @foreach($names as $name)
-        {{ $name }}
-        <hr />
-        <br />
+        <div>
+            Le nom est : {{ $name }}
+            <hr />
+        </div>
     @endforeach
 
 </body>
