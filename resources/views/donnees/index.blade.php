@@ -8,6 +8,14 @@
 </head>
 <body>
     <h1>Données</h1>
-    <h3> {{ $name }} </h3>
+    <h3> {{ $variable }} </h3>
+    <h3> {{ $age }} </h3>
+    
+    @foreach($names as $name)
+        {{ $name }}
+        <hr />
+        <br />
+    @endforeach
+
 </body>
 </html>

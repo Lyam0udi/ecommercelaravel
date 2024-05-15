@@ -19,7 +19,9 @@ class PageController extends Controller
     public function donnees (){
 
         $name = "Ahmed";
-        return view('donnees/index')->with('name',$name);
+        $age = 28;
+        $names = ["Mohammaed", "Ahmad", "Khalid "];
+        return view('donnees/index')->with('variable',$name)->with('age',$age)->with('names',$names);
     }
     
 }
