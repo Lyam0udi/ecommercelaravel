@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 class PageController extends Controller
 {
+    
     // Controller method to display page1
     public function afficherPage1(){
         return view('page1');
@@ -21,7 +22,7 @@ class PageController extends Controller
         $name = "Ahmed";
         $age = 28;
         $names = ["Mohammaed", "Ahmad", "Khalid "];
-        return view('donnees/index')->with('variable',$name)->with('age',$age)->with('names',$names);
+        return view('donnees/index')->with('variable',$name)->with('age',$age)->with('names',$names); 
     }
     
 }
